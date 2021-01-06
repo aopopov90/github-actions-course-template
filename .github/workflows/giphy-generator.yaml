@@ -10,8 +10,8 @@ on:
     
 jobs:
   giphy-generator:
+    name: GIPHY Generator
     runs-on: ubuntu-latest
-    
     steps:
       - name: GIPHY Generator
         id: giphy_generator
@@ -21,5 +21,4 @@ jobs:
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }} # This token should be created on giphy.com: https://developers.giphy.com/dashboard/?create=true
         with:
           rating: 'g'
-          lang: 'en
-    
+          lang: 'en'
